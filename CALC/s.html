@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <title>Numbers Calculator</title>
+</head>
+<body>
+   
+<div class="all">
+
+    <div class="logo">
+        <img src="img/git.png" class="git">
+        <img src="https://fontmeme.com/permalink/200109/22dd02ff321a80c26b42c97cd6dbb23a.png" alt="github-font" border="0" class="name">
+    </div>
+
+<form>
+    <label for="fname">First number:</label><br> 
+    <input type="text" id="numm1">
+     <br>
+     <label for="fname">Second number:</label>
+     <br>
+     <input type="text" id="numm2">
+</form>
+
+    <div class="calc">
+                        <input type="button" onClick="AdditionBy(document.getElementById('numm1').value,document.getElementById('numm2').value)" Value="Addition" id="z">
+                        <input type="button" onClick="substractionBy(document.getElementById('numm1').value,document.getElementById('numm2').value)" Value="Substraction" id="z">
+                        <input type="button" onClick="multiplyBy(document.getElementById('numm1').value,document.getElementById('numm2').value)" Value="Multiply" id="z">
+                        <input type="button" onClick="divideBy(document.getElementById('numm1').value,document.getElementById('numm2').value)" Value="Division" id="z">
+    </div>
+
+    <div class="resultat">
+        <p>The Result is : <br><span id = "res"></span></p>
+    </div>
+
+</div>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
